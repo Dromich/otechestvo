@@ -11,6 +11,11 @@
 	color: #fff;
 }
 
+* {
+	text-decoration: none;
+	list-style: none;
+}
+
 body {
 	font-size: 16px;
 	min-width: 320px;
@@ -48,6 +53,78 @@ b, strong {
 	font-weight: bold;
 }
 
+header{
+	background: url('../img/bg_header.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 100px;
+}
 
+.header-wrapper {
+	height: 130px;
+	margin-top: -25px;
+}
+
+.header-logo img {max-width: 100%;}
+
+.simple-text {
+	font-size: 14px;
+	color: $header_text;
+	font-weight: 500;
+}
+
+.social-list,
+.sign-in {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.social-list li {
+	width: 29px;
+	height: 29px;
+	border-radius: 7px;
+	background-color: $bg_footer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-list li a {
+	color: $text;
+	font-size: 15px;
+}
+
+.social-list li:not(:last-child) {
+	margin-right: 6px;
+}
+
+.social-list li:first-child{
+	margin-left: 0px;
+}
+
+.sign-in li a {
+	font-size: 14px;
+	font-weight: 500;
+	color: $header_text;
+	text-decoration: none;
+}
+
+.sign-in li:first-child {
+	margin-right: 10px;
+}
+
+.sign-in li.button {
+	width: 110px;
+	height: 29px;
+	box-shadow: 0 7px 32px rgba(183, 224, 75, 0.43);
+	border-radius: 7px;
+	text-align: center;
+	background-image: linear-gradient(to bottom, #c0e45d 0%, #b0db3d 100%);
+}
+
+.sign-in li.button a {
+	color: $text;
+}
 
 @import "media"; // Always at the end
