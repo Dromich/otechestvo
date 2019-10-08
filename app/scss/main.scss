@@ -121,11 +121,12 @@ header{
 	border-radius: 7px;
 	text-align: center;
 	background-image: linear-gradient(to bottom, #c0e45d 0%, #b0db3d 100%);
+	a {
+		color: $text;
+	}
 }
 
-.sign-in li.button a {
-	color: $text;
-}
+
 
 .categoryes {
 	margin-top: -25px;
