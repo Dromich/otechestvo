@@ -127,4 +127,49 @@ header{
 	color: $text;
 }
 
+.categoryes {
+	margin-top: -25px;
+}
+
+.categoryes-wrapper {
+	min-height: 46px;
+	background-color: $bg_footer;
+	border-radius: 7px;
+}
+
+.categoryes-item {
+	min-height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.categoryes-wrapper a {
+	text-decoration: none;
+	color: $text;
+	transition: .4s all;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.categoryes-item:hover {
+	background-color: #C5E56D;
+	cursor: pointer;
+}
+
+.categoryes-item:first-child:hover {
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+.categoryes-item:last-child:hover {
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+.categoryes-item:hover a {
+	color: $header_text;
+	transition: .4s all;
+}
+
 @import "media"; // Always at the end
