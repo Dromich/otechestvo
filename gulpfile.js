@@ -1,4 +1,4 @@
-var syntax = 'scss'
+var syntax = 'sass'
 // Syntax: sass or scss;
 
 var gulpVersion = '4' // Gulp version: 3 or 4
